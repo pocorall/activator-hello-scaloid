@@ -1,7 +1,17 @@
-name := "hello-scala"
+import android.Keys._
 
-version := "1.0"
+android.Plugin.androidBuild  
 
+name := "hello-scaloid-sbt"
+ 
 scalaVersion := "2.10.2"
+ 
+proguardOptions in Android ++= Seq("-dontobfuscate", "-dontoptimize")
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1" % "test"
+libraryDependencies += "org.scaloid" %% "scaloid" % "2.4-8"
+
+scalacOptions in Compile += "-feature"
+ 
+run <<= run in Android
+ 
+install <<= install in Android
