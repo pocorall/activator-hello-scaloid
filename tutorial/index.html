@@ -1,38 +1,18 @@
 <html>
 <head>
-    <title>Hello Scala - Activator Template</title>
+    <title>Hello Scaloid - Activator Template</title>
 </head>
 <body>
 <div>
     <h2> Explore the Code</h2>
 
-    <p>You've just created a Scala application!  This is a basic "Hello, World"
-       application.   Let's look at the <a href="#code/src/main/scala/Hello.scala"
-      class="shortcut">src/main/scala/Hello.scala</a> file.</p>
+    <p>You've just created an Android application!  This is a basic "Hello, World"
+       Scaloid application.   Let's look at the <a href="#code/src/org/scaloid/hello/HelloScaloid.scala"
+      class="shortcut">src/org/scaloid/hello/HelloScaloid.scala</a> file.</p>
 
-    <p>This file consists of a single object called <code>Hello</code>.  This
-       object defines a <code>main</code> method, which denotes that it can be run as a
-       standalone application.  Let's look into the definition of the main method:</p>
-<pre><code>def main(args: Array[String]): Unit = </code></pre>
-    <p> The method definition starts with the keyword "<code>def</code>".   This is used to define all
-       methods in scala.  After def comes the name of the method, in this case "main".</p>
-    <p>Following the name is the argument list, denoting input parameters to the method.  In
-       the case of the "<code>main</code>" method, it takes a single parameter called "<code>args</code>".
-       When the application is executed, any command line arguments will be bundled into an array 
-       of string values (or "<code>Array[String]</code>") and passed into the "<code>main</code>" method.</p>
-    <p>Following the argument list is the return type of the method.  For main, this is "<code>Unit</code>" which
-       denotes "uninteresting" return type.   It is similar to the "void" type of Java/C/C++ in that we aren't
-       interesting in calling the "<code>main</code>" method for a return value.
-    <p>Following the return type is an "<code>=</code>" character and then the method implementation.
-       For the <code>Hello.main</code> method, the implementation is the following block of code:
-    </p>
-    <pre><code>{
-  println("Hello, World")
-}</code></pre>
-
-    <p>This block of code uses the <code>println</code> method to display the string
-       literal "Hello, world!" on the console.  We can see this output by
-       clicking on the <a class="shortcut" href="#run">Run</a> tab.
+    <p>This file consists of a single class called <code>HelloScaloid</code>.  This
+       class derives a trait <code>SActivity</code>, which denotes that it is an Activity of an
+       Android app. Please refer to <a href="http://scaloid.org">Scaloid website</a> for more information.
     </p>
 </div>
 <div>
